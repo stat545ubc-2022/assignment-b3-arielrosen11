@@ -16,7 +16,7 @@ ui <- fluidPage(
               value = c(25, 60), pre = "$"),
   radioButtons("typeInput", "Type", 
                choices = c("BEER", "REFRESHMENT", "SPIRITS", "WINE")), 
-  selectInput("countryInput",  #adding a list of countries in to select from using a select input dropdown 
+  selectInput("countryInput",  #MODIFICATION 1: adding a list of countries to select from using a select input dropdown 
               label = "Country", 
                      choices = list("CANADA",
                                     "UNITED STATES OF AMERICA", 
@@ -49,9 +49,9 @@ ui <- fluidPage(
   mainPanel(
     tabsetPanel(tabPanel("Plot", plotOutput("alcohol_hist")), 
                  tabPanel("Table",dataTableOutput("data_table"))
-                #Using tabsetPanel to create separate tabs for the plot and the table which makes it easier to see the slider
+                #MODIFICATION 2: Using tabsetPanel to create separate tabs for the plot and the table which makes it easier to see the slider
                 #and buttons at the same time as seeing the output table or plot
-                #Using dataTableOutput to make the table interactive which is useful for example to search for specific features of the liquor
+                #MODIFICATION 3: Using dataTableOutput to make the table interactive which is useful for example to search for specific features of the liquor
   ))
 )
 
@@ -60,7 +60,7 @@ server <- function(input, output) {
     reactive({bcl%>% filter(Price > input$priceInput[1] & 
                               Price < input$priceInput[2] &
                               Type == input$typeInput &
-                              Country == input$countryInput) #adding an option to choose which country the alcohol is from which is useful to 
+                              Country == input$countryInput) #MODIFICATION 1: adding an option to choose which country the alcohol is from which is useful to 
                                                              #look at alcohol content and price in products from specific regions of the world 
       })
   
@@ -70,7 +70,7 @@ server <- function(input, output) {
            geom_histogram(colour="darkblue", fill="lightblue")
     }) 
   
-  output$data_table <- #using renderDataTable to make the table interactive which is useful for example to search for specific features of the liquor 
+  output$data_table <- #MODIFICATION 2: using renderDataTable to make the table interactive which is useful for example to search for specific features of the liquor 
     renderDataTable({
    filtered_data()
     })
