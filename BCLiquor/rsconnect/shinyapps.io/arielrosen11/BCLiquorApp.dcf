@@ -1,0 +1,14 @@
+name: BCLiquorApp
+title: BCLiquorApp
+username:
+account: arielrosen11
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7718698
+bundleId: 6548645
+url: https://arielrosen11.shinyapps.io/BCLiquorApp/
+when: 1669240357.7325
+lastSyncTime: 1669240357.73251
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|app.Rmd|BCLiquor/server.R|BCLiquor/ui.R|deploy.R
