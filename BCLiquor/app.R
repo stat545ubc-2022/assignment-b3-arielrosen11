@@ -3,7 +3,7 @@ library(tidyverse)
 library(shinythemes)
 library(DT)
 
-bcl <- read_csv(here::here("bcl-data.csv"))
+bcl <- read_csv("https://gist.githubusercontent.com/daattali/720431961c6c5394ae96/raw/10222380b7d3c9c43d22cc67e6afe84fef98ab9a/bcl-data.csv")
 
 ui <- fluidPage(
   theme = shinytheme("cerulean"), 
