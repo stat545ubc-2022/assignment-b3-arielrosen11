@@ -7,7 +7,9 @@
 
 3. This app helps users navigate the BC Liquor data set. My implemenatation are: 
     a) Separating the table and the plot into separate tabs.
+    
     b) Including a dropdown menu to select the country of origin of the liquor. 
+    
     c) Making the table interactive to allow users to search for data within the table and to reorder the table. 
     
 4. Source of the data set is linked within the app and can be accessed here: https://github.com/daattali/shiny-server/blob/master/bcl/data/bcl-data.csv
