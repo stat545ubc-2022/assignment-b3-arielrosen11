@@ -5,7 +5,7 @@
 
 2. Assignment choice: Option A - BC Liquor APP 
 
-3. This app helps users navigate the BC Liquor data set. My implemenatation are: 
+3. This app helps users navigate the BC Liquor data set. My implementations are: 
    
     a) Separating the table and the plot into separate tabs.
     
