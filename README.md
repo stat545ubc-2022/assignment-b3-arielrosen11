@@ -6,6 +6,7 @@
 2. Assignment choice: Option A - BC Liquor APP 
 
 3. This app helps users navigate the BC Liquor data set. My implemenatation are: 
+   
     a) Separating the table and the plot into separate tabs.
     
     b) Including a dropdown menu to select the country of origin of the liquor. 
